@@ -15,7 +15,6 @@ def load_image(image):
     return text
  
 app = Flask(__name__) #Initialize the flask App
-
  
 @app.route('/')
 @app.route('/first')
@@ -28,7 +27,6 @@ def login():
 @app.route('/chart')
 def chart():
     return render_template('chart.html')
-
 
 @app.route('/index')
 def index():
